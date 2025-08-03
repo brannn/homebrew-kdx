@@ -15,10 +15,11 @@ class Kdx < Formula
   end
 
   on_linux do
-    url "https://github.com/brannn/kdx/releases/download/v0.1.0/kdx-linux-x86_64.tar.gz"
-    sha256 "PLACEHOLDER_LINUX_SHA256"
+    if Hardware::CPU.intel?
+      url "https://github.com/brannn/kdx/releases/download/v0.1.0/kdx-linux-x86_64.tar.gz"
+      sha256 "PLACEHOLDER_LINUX_SHA256"
+    end
   end
-
   def install
     bin.install "kdx"
   end
