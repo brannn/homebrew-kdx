@@ -1,23 +1,23 @@
 class Kdx < Formula
   desc "K8s Discovery Experience - A command-line tool for exploring Kubernetes clusters"
   homepage "https://github.com/brannn/kdx"
-  version "0.3.0"
+  version "0.3.1"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/brannn/kdx/releases/download/v0.3.0/kdx-macos-aarch64.tar.gz"
-      sha256 "2e6ba370596c8fb5bcbb697f8e4ed843e20b18a1d23e11797da15eb5b1e0dca2"
+      url "https://github.com/brannn/kdx/releases/download/v0.3.1/kdx-macos-aarch64.tar.gz"
+      sha256 "54faf61e95c5bdfee0da7ec087dd75dfb3f65bad7709d8ce0d25ac1683c9e35a"
     else
-      url "https://github.com/brannn/kdx/releases/download/v0.3.0/kdx-macos-x86_64.tar.gz"
-      sha256 "5f30d4ac7db2ca40b6b25ccd1757d1d6bee98e2b26b30ea5b2f530eefe8fb1f7"
+      url "https://github.com/brannn/kdx/releases/download/v0.3.1/kdx-macos-x86_64.tar.gz"
+      sha256 "ca18c6db3e491dcd4bc4946a5322b8655afed7f4568a5dcb9f9748cbe79d74be"
     end
   end
 
   on_linux do
     if Hardware::CPU.intel?
-      url "https://github.com/brannn/kdx/releases/download/v0.3.0/kdx-linux-x86_64.tar.gz"
-      sha256 "762a914b31b9e714619cbb0f306ade2e69ae8b9d3a7544dcb766c58729305e46"
+      url "https://github.com/brannn/kdx/releases/download/v0.3.1/kdx-linux-x86_64.tar.gz"
+      sha256 "70f99fc22c3a07e6cbda94b6175bd246079a49a010f9dbb85a944c6b6f031f38"
     end
   end
 
