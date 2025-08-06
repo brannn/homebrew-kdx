@@ -7,17 +7,17 @@ class Kdx < Formula
   on_macos do
     if Hardware::CPU.arm?
       url "https://github.com/brannn/kdx/releases/download/v0.4.1/kdx-macos-aarch64.tar.gz"
-      sha256 "b320eacae77b0660b46e657b2f219100cf237ef89f93edc5d05bba49140a8adf"
+      sha256 "4dc86738dd1b940761954d8f7db1b56e5acafa087ac8938af2bac2fce7b3126b"
     else
       url "https://github.com/brannn/kdx/releases/download/v0.4.1/kdx-macos-x86_64.tar.gz"
-      sha256 "c8b77f58f1133c7a462e94389e2efe2895375d497ebd6c791ca12f15aa54ffea"
+      sha256 "8a899f778554b0da272ec2a7e5ba101c2dab2dec753673fb0dd7dceeb9d66fd1"
     end
   end
 
   on_linux do
     if Hardware::CPU.intel?
       url "https://github.com/brannn/kdx/releases/download/v0.4.1/kdx-linux-x86_64.tar.gz"
-      sha256 "f327b56dd9610289ee8a2714076a4e243a4d7381f55457cad7288eb8dd569d78"
+      sha256 "5d929731f8365ba3e5fffdf392303e520d5f3f8a2c973d90a21c179a8a4f2cb8"
     end
   end
 
